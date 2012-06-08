@@ -1,0 +1,9 @@
+CalTalk is a small MacOS X app I wrote to enable local iCal calendar sharing
+over Bonjour for a small company. It has a builtin WebDAV server that serves
+calendars out of iCal 1.0 and 2.0's private storage, advertising itself over
+Bonjour so that other CalTalks can see it. It would probably need
+substantial modification to work with contemporary versions of iCal. BusyMac
+makes a product, BusySync, which works with modern OS X and CalTalk:
+http://www.busymac.com/busysync/
+
+You may do whatever you want with this source code.

@@ -1,0 +1,46 @@
+body {
+    font-family: Georgia, Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+.heading {
+    font-size: 20pt;
+    height: 64px;
+    line-height: 64px;
+    vertical-align: middle;
+    background-color: #eee;
+}
+
+.headingicon {
+    padding-right: .1in;
+    display: block;
+    float: left;
+}
+
+.headingversion {
+    padding-top: .2in;
+    color: #555;
+    font-size: 10pt;
+}
+
+ol.gettingStartedSteps li > p {
+    margin-top: .05in;
+}
+
+ol.gettingStartedSteps li {
+    padding-bottom: .25in;
+}
+
+.gettingStartedStepHeading {
+    font-size: 16pt;
+}
+
+img.screenshot {
+    display: block;
+    margin: .1in auto;
+}
+
+.footer {
+    font-size: 10pt;
+    
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>Getting Started with CalTalk</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="AppleTitle" content="CalTalk Help" />
+
+    <link rel="stylesheet" href="CalTalkHelp.css" />
+
+    <script type="text/javascript" src="version.js"></script>
+</head>
+<body onload="detectVersion();">
+
+<img class="headingicon" src="CalTalkIcon.png" width="64" height="64" />
+<div class="heading">
+Getting Started with CalTalk
+</div>
+<div class="headingversion">CalTalk version 1.1</div>
+<p>Some of these instructions will be specific to <span name="version"></span>. To get instructions for
+a different MacOS version, click one of the following links:
+<a href="javascript:void(setVersion('Panther'))">OS 10.3 "Panther"</a> &nbsp;
+<a href="javascript:void(setVersion('Tiger'))">OS 10.4 "Tiger"</a>
+</p>
+<p>iCal has built-in support for publishing and subscribing to calendars over a network. However, this
+support usually requires either buying a .Mac subscription or setting up a WebDAV server. For small networks,
+CalTalk simplifies iCal calendar sharing by sharing your iCal calendars right from
+your own computer. CalTalk also lets you browse and subscribe to other CalTalk users' calendars similarly to how you
+browse iTunes playlists and iPhoto albums. To get started using CalTalk on a network,
+follow these steps:
+<ol>
+<li><a href="#step1">Install CalTalk on your computers</a></li>
+<li><a href="#step2">Start CalTalk and subscribe to calendars</a></li>
+<li><a href="#step3">Set a password to protect your calendars</a></li>
+<li><a href="#step4">Share your own calendars</a></li>
+<li><a href="#step5">Set CalTalk to start when you log in to your computer</a></li>
+</ol>
+<br/>
+<ol class="gettingStartedSteps">
+    <li><div id="step1" class="gettingStartedStepHeading">Install CalTalk on your computers</div>
+	<p>CalTalk installs like most Mac software; open the disk image, drag CalTalk onto your hard drive or a public
+	folder on your network, and you're good to go.</p>
+    </li>
+    <li><div id="step2" class="gettingStartedStepHeading">Start CalTalk and subscribe to calendars</div>
+	<p>Launch CalTalk, and you will be greeted with the main window:<br />
+	<img class="screenshot" src="networkTabScreenshot.png" /><br />
+	The window has two tabs, the "Network" tab for browsing and subscribing to other people's calendars and
+	the "My Calendars" tab for managing the sharing of your own calendars. When you first open CalTalk, the
+	window will be open to the Network tab shown above. The names of all the users running CalTalk on your
+	local network will appear in the left half of the window. Clicking a user's name will display their shared
+	calendars in the right half, and double-clicking one of those calendars' names will subscribe to it in iCal.</p>
+	<p>As an example, to subscribe to Bob's "Home" calendar, choose Bob's name from the Users list in the left
+	half of the window (a), pick "Home" from the "Bob's Calendars" list in the right half (b), and click
+	the "Subscribe" button (c). iCal will open to confirm the subscription:
+	<span name="pantherOnly">
+	    <img class="screenshot" src="iCal1.5SubscribeScreenshot.png" /><br />
+	    Check the "Refresh every 15 minutes" box (d) so that iCal will keep the calendar up to date automatically,
+	    then click the "Subscribe" button (e) to confirm. The calendar, named "Home (bob)", will now
+	    appear in iCal's Calendars list:<br />
+	    <img class="screenshot" src="iCal1.5CalendarsListScreenshot.png" /><br />
+	</span>
+	<span name="tigerOnly">
+	    <img class="screenshot" src="iCal2.0SubscribeScreenshot1.png" /><br />
+	    Click the "Subscribe" button (d) to confirm. Another sheet will appear:<br />
+	    <img class="screenshot" src="iCal2.0SubscribeScreenshot2.png" /><br />
+	    Give the calendar a descriptive name (e), such as "Bob's Home", and check the "Refresh 
+	    every 15 minutes" box (f) so that iCal will keep the calendar up to date automatically. Press "OK" (g),
+	    and the "Bob's Home" calendar will appear in iCal's Calendars list:<br />
+	    <img class="screenshot" src="iCal2.0CalendarsListScreenshot.png" /><br />
+	</span>
+	Repeat for every calendar you want to subscribe to. If a user has put a password on their calendars, you will
+	be prompted for that password before listing or subscribing to them.
+	</p>
+    </li>
+    <li><div id="step3" class="gettingStartedStepHeading">Set a password to protect your calendars</div>
+	<p>If you do not want to share your own calendars, you're done! None of the following steps are
+	necessary just to browse with CalTalk.</p>
+	<p>To limit access to your shared calendars on the network, you may want to require a password to access
+	them. A "Set Password" button is provided under the "My Calendars" tab for this purpose:<br />
+	<img class="screenshot" src="myCalendarsSetPasswordScreenshot.png" /><br />
+	Press the button, and you will be taken to the Security section of CalTalk's preferences:<br />
+	<img class="screenshot" src="preferencesSecurityScreenshot.png" /><br />
+	Type your user name into the "User name" box (a), then type your password twice into the two "Password" boxes
+	(b). After this is done, press the "Set Name and Password" button (c). A lock icon will appear to indicate
+	that your password has been successfully set (d). Note that the contents of the password boxes may appear to
+	change as soon as you press the "Set Name and Password" button; to protect your password, CalTalk replaces the
+	boxes' contents with a random string as soon as it has been saved.</p>
+	<p>Once your password has been set, you will need to decide whether you want to protect your calendars using
+	digest authentication. Digest authentication provides added security by encrypting your password when it is
+	sent over the network; unfortunately, the version of iCal included with MacOS 10.3 "Panther" cannot subscribe
+	to calendars protected with digest authentication. If all of the computers you will be sharing calendars with
+	are using MacOS 10.4 "Tiger" or higher, make sure the "Use Digest authentication" checkbox (e) is checked.
+	If you have to maintain compatibility with machines running Panther, uncheck the box. Be aware that if other
+	users on your network snoop on your network traffic, they will be able to read your password.</p>
+    </li>
+    <li><div id="step4" class="gettingStartedStepHeading">Share your own calendars</div>
+	<p>To make your own calendars available on the network, go to the main window's "My Calendars" tab:<br />
+	<img class="screenshot" src="myCalendarsTabScreenshot.png" /><br />
+	Check the "Share my calendars" box (a) to start sharing your calendars, then check the boxes next to the
+	names of your calendars (b) that you want to make public. Your name and calendars will now appear for other
+	CalTalk users to browse and subscribe to. Note that <b>you must leave CalTalk running</b> for other users 
+	to continue to be able to see your calendars. You may close the CalTalk window while sharing calendars;
+	CalTalk will remain running in the background until you choose the "Quit CalTalk" menu item from the CalTalk
+	menu. To open the Calendars window again after it has been closed, click on CalTalk's dock icon.
+	</p>
+    </li>
+    <li><div id="step5" class="gettingStartedStepHeading">Set CalTalk to start when you log in to your computer</div>
+	<p>If you share your calendars with CalTalk, you'll want it to run every time you log into your computer
+	so that other users can	subscribe to your calendars and keep them up to date. Choose "Preferences" from
+	the "CalTalk" menu, go to the "Launch/Quit" tab (a), and check the "Start CalTalk when I log in" box (b):<br />
+	<img class="screenshot" src="preferencesLaunchQuitScreenshot.png" /><br />
+	The setting will immediately take effect; there is no need to click an "OK" or "Apply" button.
+	</p>
+    </li>
+</ol>
+<p>If you still have problems or questions about CalTalk, please <a href="mailto:arcata@gmail.com">email the author</a>.
+<div class="footer">&copy;2005 Joe Groff.<br />
+<a href="http://pknet.com/~joe/">http://pknet.com/~joe/</a><br />
+<a href="mailto:arcata@gmail.com">arcata@gmail.com</a>
+</html>

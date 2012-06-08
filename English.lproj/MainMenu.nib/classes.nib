@@ -1,0 +1,50 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                confirmQuit = id; 
+                dismissPasswordPanel = id; 
+                goToICal = id; 
+                refreshUsersList = id; 
+                showMyCalendarsTab = id; 
+                showNetworkTab = id; 
+                showSecurityPreferencesTab = id; 
+                subscribeToCalendar = id; 
+            }; 
+            CLASS = CalTalkController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "o_calendarsTabView" = NSTabView; 
+                "o_calendarsWindow" = NSWindow; 
+                "o_myCalendarsController" = NSArrayController; 
+                "o_networkCalendarsController" = NSArrayController; 
+                "o_networkCalendarsTableView" = NSTableView; 
+                "o_networkUsersController" = NSArrayController; 
+                "o_passwordController" = PasswordController; 
+                "o_passwordSheet" = NSPanel; 
+                "o_passwordSheetPasswordTextField" = NSTextField; 
+                "o_passwordSheetStoreInKeychainButton" = NSButton; 
+                "o_passwordSheetUsernameTextField" = NSTextField; 
+                "o_preferencesPanel" = NSPanel; 
+                "o_preferencesTabView" = NSTabView; 
+                "o_quitConfirmPanel" = NSPanel; 
+            }; 
+            SUPERCLASS = NSObjectController; 
+        }, 
+        {CLASS = CalTalkData; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {setPassword = id; }; 
+            CLASS = PasswordController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "o_passwordTextField1" = NSTextField; 
+                "o_passwordTextField2" = NSTextField; 
+                "o_userNameTextField" = NSTextField; 
+                "o_window" = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
